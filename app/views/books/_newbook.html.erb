@@ -1,0 +1,14 @@
+<h1>New book</h1>
+<%= form_with model: book, local: true do |form| %>
+
+<p><%= form.label :title %><br>
+<%= form.text_field :title %>
+
+<p><%= form.label :body %><br>
+<%= form.text_area :body %>
+</p>
+
+<div class="form-group">
+    <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">
+  </div>
+<% end %>
